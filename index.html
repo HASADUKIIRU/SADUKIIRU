@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu{
+            width: 80%;
+            height: 100px;
+            background-color: rgb(55, 37, 192);
+            margin: auto;
+        }
+        .ul{
+            list-style: none;
+            display: flex;
+        }
+        .ul li{
+            margin: 30px;
+        }
+        .list{
+            width: 150px;
+            height: 150px;
+            padding: 5px;
+            border-radius: 8px;
+            display: none;
+            background-color: lightskyblue;
+        }
+        .list ul{
+            flex-direction: column;
+        }
+        .list ul li{
+            padding: 5px;
+        }
+        .list ul li:hover{
+            background-color: lightpink;
+        }
+        .dropdown:hover .list{
+            display: black;
+        }
+    </style>
+</head>
+<body>
+         <menu>
+             <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Content</a></li>
+                <li class="dropdown">
+                    <a href="#">List<i class="fa fa-angle-down"aria-hidden="true"></i></a>
+                    <div class="list">
+                        <ul>
+                            <li><a href="#">link stay</a></li>
+                            <li><a href="#">Project</a></li>
+                            <li><a href="#"></a>buy</li>
+                        </ul>
+                    </div>
+                </li>
+             </ul>
+         </menu>
+</body>
+</html>
